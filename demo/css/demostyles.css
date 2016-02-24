@@ -1,37 +1,51 @@
 *{margin:0;padding:0;}
 body {
-  background: #111; 
-  font-family: 'Open Sans', sans-serif;    
-  color: #fff;   
-  overflow-x: hidden;    
+  background: #111;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  overflow-x: hidden;
 }
 header{
   position: absolute;
   z-index: 9999;
-  width: 100%;    
-  background: rgba(0,0,0,.5);    
+  width: 100%;
+  background: rgba(0,0,0,.5);
 }
-h1, h2, h3{   
+h1, h2, h3{
     font-family: 'Open Sans Condensed', sans-serif;
-    font-weight: 700; 
+    font-weight: 700;
     margin: .8em 0 .2em 0;
-}    
-h1{   
+}
+h1{
  margin: .2em .5em;
- display: inline-block;       
+ display: inline-block;
+ float:left;
 }
-header p{
- display: inline-block; 
- font-size: .9em;    
+header ul{
+  float: right;
 }
+header li{
+display: inline-block;
+font-size: .9em;
+padding: 2.5em;
+}
+header a{
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+header a:hover{
+color:gray;
+}
+
 .content{
-    margin: 1em 2em;    
+    margin: 1em 2em;
 }
 .content ul, .content ol{
-    margin: .8em 1em .8em 2em;   
+    margin: .8em 1em .8em 2em;
 }
 span.code{
-    font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;   
+    font-family: "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
     color: #999;
 }
 .gist{
@@ -40,7 +54,7 @@ span.code{
 ol .gist{
     margin: 1em 0 2em 0;
 }
-a{ 
+a{
     color:#fff;
 }
 .num2{
@@ -60,21 +74,34 @@ footer span{
     font-size: 1.3em;
     color: #fff;
 }
+
+.mgmtimg figure{
+  display: inline-block;
+  padding: 5em;
+}
+.contactus span{
+  display: inline-block;
+  padding: 3em;
+}
+.contactus span p{
+  padding: 0.5em;
+}
+
 @media screen and (max-width: 830px){
     h1{
-     font-size: 1.3em;   
+     font-size: 1.3em;
     }
     .desc{
-        display: none;   
+        display: none;
     }
 }
 
 @media screen and (max-width: 400px){
     h1{
-     font-size: 1.1em;   
+     font-size: 1.1em;
     }
     header span{
-        display: none;   
+        display: none;
     }
     .gist{
         width: 100%;
