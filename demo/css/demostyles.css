@@ -1,41 +1,50 @@
 *{margin:0;padding:0;}
 body {
-  background: #111;
+  background: #ffffff;
   font-family: 'Open Sans', sans-serif;
-  color: #fff;
+  color:#8c8c8c;
   overflow-x: hidden;
 }
-header{
-  position: absolute;
+.header{
+  position: fixed;
   z-index: 9999;
   width: 100%;
-  background: rgba(0,0,0,.5);
+  background: rgba(255,255,255,.4);
 }
 h1, h2, h3{
     font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 700;
     margin: .8em 0 .2em 0;
 }
-h1{
- margin: .2em .5em;
- display: inline-block;
- float:left;
-}
-header ul{
-  float: right;
-}
-header li{
-display: inline-block;
-font-size: .9em;
-padding: 2.5em;
-}
-header a{
-  text-decoration: none;
-  text-transform: uppercase;
+
+.menu{
+    display:table;
 
 }
-header a:hover{
-color:gray;
+.menu li{
+   padding-left: 3em;
+   padding-right: 6em;
+    display:table-cell;
+    vertical-align:middle;
+}
+.header a{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+
+}
+.header.active {
+
+  background:#fff
+}
+.header.active a{
+  color:#777;
+}
+.anchor {
+   position: relative;
+   top: -5.1em;
+   visibility:hidden;
 }
 
 .content{
@@ -55,24 +64,24 @@ ol .gist{
     margin: 1em 0 2em 0;
 }
 a{
-    color:#fff;
+    color:#8c8c8c;
 }
 .num2{
     width: 85%;
     margin: 2em auto;
 }
 footer{
-    color: #ccc;
+    color: #8c8c8c
     font-size: .8em;
     font-style: italic;
     text-align: center;
-    background: #000;
+    background: rgba(255,255,255,1);
     padding: 1.5em 0 .5em 0;
     margin-top: 5em;
 }
 footer span{
     font-size: 1.3em;
-    color: #fff;
+    color: #8c8c8c;
 }
 
 .mgmtimg figure{
